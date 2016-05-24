@@ -26,5 +26,8 @@ template "#{node['php']['conf_dir']}/php.ini" do
     group node['root_group']
     mode '0644'
   end
-  variables(directives: node['php']['directives'])
+  variables(
+    directives: node['php']['directives'],
+    predefined_directives: node['php']['predefined_directives'],
+  )
 end

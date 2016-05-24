@@ -20,6 +20,7 @@
 lib_dir = 'lib'
 default['php']['install_method'] = 'package'
 default['php']['directives'] = {}
+default['php']['predefined_directives'] = {}
 default['php']['bin'] = 'php'
 
 default['php']['pear'] = 'pear'
